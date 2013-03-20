@@ -1,0 +1,78 @@
+﻿@model Cms.Models.Cms
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Cms</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PayDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PayDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.VoucherNo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.VoucherNo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ChequeNo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ChequeNo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CustomerNo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CustomerNo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CustomerType)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CustomerType)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AccountNo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AccountNo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AccountName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AccountName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PayMode)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PayMode)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PayAmount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PayAmount)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
